@@ -556,6 +556,35 @@ export default function App() {
           </div>
         )}
 
+        {/* Welcome Image - Show when connected but no scene generated yet */}
+        {callStatus === 'connected' && displayMode === 'none' && !isGenerating && !isWaitingForAgent && (
+          <div className="w-full max-w-5xl space-y-8">
+            <div className="text-center">
+              <div className="relative inline-block">
+                <img
+                  src="/welcome.png"
+                  alt="Welcome to your adventure"
+                  className="w-full max-w-4xl rounded-2xl shadow-2xl border-4 border-purple-400 shadow-purple-400/20"
+                  onError={(e) => {
+                    console.error('Failed to load welcome image');
+                  }}
+                />
+                <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-blue-500 rounded-2xl blur opacity-20"></div>
+              </div>
+            </div>
+
+            {/* Welcome Instructions */}
+            <div className="text-center p-6 bg-black/70 backdrop-blur-sm rounded-xl border-2 border-purple-400 shadow-lg shadow-purple-400/20">
+              <p className="text-purple-300 pixel-font text-lg mb-2">
+                🎙️ READY FOR ADVENTURE
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                Tell your guide what kind of adventure you'd like to embark on!
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* Choices Display */}
         {displayMode === 'choices' && choices.length > 0 && !isGenerating && (
           <div className="w-full max-w-6xl space-y-8">

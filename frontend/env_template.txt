@@ -1,0 +1,8 @@
+# Copy this file to .env and fill in your actual values
+
+# Vapi Configuration
+VITE_VAPI_PUBLIC_KEY=your_vapi_public_key_here
+VITE_ASSISTANT_ID=your_assistant_id_here
+
+# Backend Configuration  
+VITE_BACKEND_URL=http://localhost:8000 
