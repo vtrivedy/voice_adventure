@@ -1,0 +1,8 @@
+**/venv/
+**/.env
+**/env/
+**/.venv/
+**/static/
+**/env_template.txt
+**/__pycache__
+
