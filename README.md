@@ -1,4 +1,4 @@
-# 🎮 Voice Adventure Agent
+# 🎮 Adventure Agent
 
 > **A fun Choose Your Own Adventure Game played with your voice and eyes!  Transform your voice into epic adventures with AI-powered storytelling and real-time image generation**
 
@@ -31,6 +31,7 @@ Traditional games lock you into predetermined paths. Voice Adventure Agent break
 - **Creative expression** - Describe wild scenarios and watch the AI bring them to life
 
 ## 🚀 Live Demo
+[![Adventure Agent Demo](assets/cover.png)](https://www.youtube.com/watch?v=psj5oVVWmvA "Adventure Agent Demo")
 
 ## 🛠️ Tech Stack Deep Dive
 
