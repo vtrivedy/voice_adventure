@@ -1,6 +1,6 @@
 # 🎮 Voice Adventure Agent
 
-> **Transform your voice into epic adventures with AI-powered storytelling and real-time image generation**
+> **A fun Choose Your Own Adventure Game played with your voice and eyes!  Transform your voice into epic adventures with AI-powered storytelling and real-time image generation**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
@@ -12,12 +12,12 @@
 
 ## 🌟 What Makes This Special?
 
-Imagine stepping into a world where **your voice becomes the controller** and **AI becomes your dungeon master**. Voice Adventure Agent isn't just another game—it's a revolutionary storytelling experience that combines:
+Imagine stepping into a world where **your voice becomes the controller** and **AI becomes your dungeon master**. Voice Adventure Agent is a fun Choose Your Own Adventure storytelling experience that combines:
 
 - 🗣️ **Natural Voice Interaction** - Speak your choices, describe your actions, shape your destiny
 - 🎨 **Real-time AI Art Generation** - Watch your story unfold through stunning visuals created by Google's Imagen-3
 - 🎭 **Dynamic Storytelling** - Every adventure is unique, limited only by your imagination
-- ⚡ **Instant Response** - Seamless conversation flow with your AI guide
+- ⚡ **Realtime Response** - Seamless conversation flow with your AI guide
 - 🌍 **Infinite Possibilities** - Medieval quests, space adventures, mystery investigations—you choose!
 
 ## 🎯 Why This Project Exists
@@ -30,13 +30,7 @@ Traditional games lock you into predetermined paths. Voice Adventure Agent break
 - **Accessibility first** - Perfect for visually impaired users or anyone who prefers voice interaction
 - **Creative expression** - Describe wild scenarios and watch the AI bring them to life
 
-This isn't just a game—it's a glimpse into the future of interactive entertainment.
-
 ## 🚀 Live Demo
-
-**[Try it now!](https://your-demo-url.com)** *(Coming soon)*
-
-Or watch the demo video: **[YouTube Demo](https://youtube.com/your-demo)**
 
 ## 🛠️ Tech Stack Deep Dive
 
