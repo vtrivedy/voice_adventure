@@ -414,13 +414,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If this project helped you or inspired you, please consider giving it a star! ⭐
 
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/voice-adventure-agent/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/voice-adventure-agent/discussions)
-- **Email**: your.email@example.com
-
----
 
 **Ready to embark on your voice-powered adventure?** 🚀
 

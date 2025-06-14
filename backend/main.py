@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 from typing import List, Dict, Any, Optional
 import json
 
+#grab Gemini key from env var and init client
 load_dotenv()
-
 # Validate required environment variables
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
@@ -20,11 +20,10 @@ if not GEMINI_API_KEY:
         "GEMINI_API_KEY environment variable is required! "
         "Please set it in your .env file or environment."
     )
-
 client = genai.Client(api_key=GEMINI_API_KEY)
 
+#set up fastapi app and add middleware (where to allow/accept requests from)
 app = FastAPI(title="Voice Adventure API")
-
 # Add CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
@@ -35,6 +34,7 @@ app.add_middleware(
 )
 
 # Create static directory and mount it for serving images
+# As images are made as part of the story gen process they'll be stored here and shown on screen
 os.makedirs("static", exist_ok=True)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
@@ -44,6 +44,8 @@ class SceneReq(BaseModel):
     option_a: str
     option_b: str
 
+# for each turn between the user and vapi agent, we define Pydantic models to define the inputs/outputs Ex:
+# Took Calls to Imagen, Input message
 # New models for the two-tool architecture
 class GenerateSceneReq(BaseModel):
     scene_prompt: str
@@ -118,6 +120,7 @@ async def debug_raw_request(request: Request):
         print(f"Error in debug endpoint: {e}")
         return {"error": str(e)}
 
+#overall helper function for generating an image and saving in locally
 def make_image(prompt: str) -> str:
     try:
         resp = client.models.generate_images(
